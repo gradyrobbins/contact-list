@@ -1,0 +1,12 @@
+body {
+    font-size: 1.1em;
+    color: DarkSlateGray;
+  };
+  
+
+#display-container {
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
