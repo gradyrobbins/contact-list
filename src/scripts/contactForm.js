@@ -17,21 +17,27 @@
 
 
 
-const contactForm = function(name, phoneNumber, address) {
-    console.log("Hello contactForm.js")
-    return {
-      name,
-      phoneNumber,
-      address,
-    
-      toString () {
-          return ` ${this.name} ${this.phoneNumber} ${this.address}`
-      },
-    
-      drive (destination) {
-          return `You drive ${this} to ${destination}`
-      }
-    }
+const contactForm =  {
+    return
+    // <article>
+    // <fieldset>
+    // <label for="lego__creator">Creator:</label>
+    // <input id="lego__creator" name="lego__creator" type="text" autofocus />
+    // </fieldset>
+    // <fieldset>
+    // <label for="lego__name">Name:</label>
+    // <input id="lego__name" name="lego__name" type="text" autofocus />
+    // </fieldset>
+    // <fieldset>
+    // <label for="lego__shape">Shape:</label>
+    // <input id="lego__shape" name="lego__shape" type="text" autofocus />
+    // </fieldset>
+    // <fieldset>
+    // <label for="lego__color">Color:</label>
+    // <input id="lego__color" name="lego__color" type="text" autofocus />
+    // </fieldset>
+    // <button class="btn lego__save">Save Lego Creation</button>
+    // </article>
   }
 
 export default contactForm;
