@@ -1,10 +1,10 @@
 {
-    "food": [
+  "food": [
     {
-        "id": 1,
-        "name": "Linguine",
-        "type": "pasta",
-        "ethnicity": "italian"
+      "id": 1,
+      "name": "Linguine",
+      "type": "pasta",
+      "ethnicity": "italian"
     },
     {
         "id": 2,
@@ -30,6 +30,20 @@
         "type": "vegetarian",
         "ethnicity": "italian"
     }
-    ],
-    "contactList": []
+],
+"contactList": [
+    {
+      "id": 1,
+      "name": "Mario",
+      "phoneNumber": "1-800-Its-aMee",
+      "address": "Red Street"
+    },
+    {
+      "id": 2,
+      "name": "Luigi",
+      "phoneNumber": "1-800-Plumbers",
+      "address": "Green Street"
+    }
+    
+]
 }

@@ -1,42 +1,22 @@
 /*
     Author: Grady
-    Name: createGarage.js
-    Purpose: To store cars in garages
+    Name: contactForm.js
+    Purpose: A ContactList component that displays all contacts. It should import the Contact component and the ContactCollection component.
+    
+    // 1. get all foods
+    // 2. loop over array []
+    // 3. use contactBuilder for each item in the array
+    // 4. append to DOM
 */
 
-/*
-    This array only exists within the scope of this module.
-    Therefore, no other module can access it. However,
-    the object returned by `createGarage` object you define below allows
-    code in other modules to indirectly access it by using
-    the methods.
-*/
+import contact from "./contact";
+import contactCollection from "./contactCollection"
+
+
+
 const contactList = [];
 
-  const createGarage = function() {
-    return {
-      store(car) {
-        garage.push(car)
-        
-      },
-    
-      retrieve(carToFind) {
-        return garage.find(car => car.make === carToFind.make && car.model === carToFind.model)
-      },
-    
-      /*
-           The getInventory property is the only way for external code to
-           read the value of the garage variable. There is no setter
-           either. It is a read only property.
-       */
-      getInventory() {
-        console.log(garage)
-        return garage
-      }
-    }
 
-  }
-  
 
 
 
