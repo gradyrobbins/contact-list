@@ -49,6 +49,14 @@
                   // newButton.addEventListener("click", eventListeners.handleFormSubmission);
                   // console.log(newButton);
                   // displayContainer.appendChild(newButton);
+                },
+
+                handleFormSubmission () {
+                    // return console.log("clicked the save button")
+                    let contactSaveBtn = document.querySelector(".contact__save");
+                    // console.log(contactSaveBtn);
+                    contactSaveBtn.addEventListener("click", () => console.log("bloooooop"));
+                    // contactList();
                 }
   }
 
