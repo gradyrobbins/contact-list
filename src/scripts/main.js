@@ -11,5 +11,5 @@ import contactList from "./contactList"
 
 console.log("Hello main.js")
 
-contactForm();
-contactList();
+contactForm.appendContactForm();
+// contactList();
