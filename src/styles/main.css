@@ -3,6 +3,13 @@ body {
     color: DarkSlateGray;
   };
   
+#contact-form-div {
+    background-color: darkolivegreen;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+
+}
 
 #display-container {
     background-color: burlywood;

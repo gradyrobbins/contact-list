@@ -1,5 +1,7 @@
-#README starter template
-##Practice: Contact List
+README starter template
+
+Practice: Contact List
+
 Build four components:
 
 A ContactCollection component that loads existing contacts from storage, and saves new ones. Each new contact should have an auto-generated identifier.
