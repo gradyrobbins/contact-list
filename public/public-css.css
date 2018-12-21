@@ -1,18 +1,20 @@
 h1 {
-    color: burlywood;
+    color: darkmagenta
 }
 
 #contact-form-div {
     background-color: cornflowerblue;
-    border: 5px solid black;
-    padding: 10px;
+    border: 5px solid burlywood;
+    border-radius: 25px;
     margin: 10px;
+    padding: 10px;
 }
 
 #display-container {
-    
-    border: 5px solid black;
-    padding: 10px;
+    background-color: burlywood;
+    border: 5px solid cornflowerblue;
+    border-radius: 10px;
     margin: 10px;
+    padding: 10px;
 
 }

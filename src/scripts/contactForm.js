@@ -23,7 +23,7 @@ const contactForm =  {
             let inputForm =
             `
             <article>
-                <h4>Please enter your contact information: </h4>
+                <h2>Please enter your contact information: </h2>
                 <fieldset>
                 <label for="contact__name">Name:</label>
                 <input id="contact__name" name="contact__name" type="text" autofocus />
@@ -54,7 +54,7 @@ const contactForm =  {
         handleFormSubmission () {
             let contactSaveBtn = document.querySelector(".contact__save");
             contactSaveBtn.addEventListener("click", () => {
-            console.log("bloooooop");
+            // console.log("bloooooop");
 
             let name = document.querySelector("#contact__name").value;
             let number = document.querySelector("#contact__phone__number").value;
@@ -62,14 +62,14 @@ const contactForm =  {
 
             const contactObject = {
                 name: name,
-                number: number,
+                phoneNumber: number,
                 address: address
             };
-            console.log(contactObject);
+            // console.log(contactObject);
 
 
-            contactCollection.saveContact(contactObject)
-
+            contactCollection.saveContact(contactObject);
+            location.reload(true);
             })
         }
     }

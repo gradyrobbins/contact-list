@@ -5,9 +5,6 @@ Purpose: A Contact component that displays a person's name, phone number, and ad
 This module builds out a single object, representing one person's contact info, to be appended to DOM in another module
 */
 
-
-// ====>
-
 // what the DOM build out will look like
 {/* <article>
     <h3>${name}</h3>
@@ -16,24 +13,24 @@ This module builds out a single object, representing one person's contact info, 
 </article> */}
 
 const contact = {
-    // cardBuilder (singleObject) => {
-    //    let contactCard = document.createElement("article");
+    cardBuilder (singleObjectfromDatabaseJSON)  {
+       let contactCard = document.createElement("article");
 
-    //    let contactName = document.createElement("h3");
-    //    contactName.textContent = singleObject.name;
+       let contactName = document.createElement("h3");
+       contactName.textContent = singleObjectfromDatabaseJSON.name;
 
-    //    let contactPhoneNumber = document.createElement("p");
-    //    contactPhoneNumber.textContent = singleObject.phoneNumber;
+       let contactPhoneNumber = document.createElement("p");
+       contactPhoneNumber.textContent = singleObjectfromDatabaseJSON.phoneNumber;
 
-    //    let contactAddress = document.createElement("p");
-    //    contactAddress.textContent = singleObject.address;
+       let contactAddress = document.createElement("p");
+       contactAddress.textContent = singleObjectfromDatabaseJSON.address;
 
-    //    contactCard.appendChild(contactName);
-    //    contactCard.appendChild(contactPhoneNumber);
-    //    contactCard.appendChild(contactAddress);
+       contactCard.appendChild(contactName);
+       contactCard.appendChild(contactPhoneNumber);
+       contactCard.appendChild(contactAddress);
 
-    //    return contactCard
-    // }
+       return contactCard
+    }
 }
 
 export default contact;
