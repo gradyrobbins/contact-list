@@ -15,49 +15,63 @@
     // refer to lego exercise
 
 */
+import contactCollection from "./contactCollection"
+
+const contactForm =  {
+
+        appendContactForm () {
+            let inputForm =
+            `
+            <article>
+                <h4>Please enter your contact information: </h4>
+                <fieldset>
+                <label for="contact__name">Name:</label>
+                <input id="contact__name" name="contact__name" type="text" autofocus />
+                </fieldset>
+                <fieldset>
+                <label for="contact__phone__number">Phone Number:</label>
+                <input id="contact__phone__number" name="contact__phone__number" type="text" autofocus />
+                </fieldset>
+                <fieldset>
+                <label for="contact__address">Address:</label>
+                <input id="contact__address" name="contact__address" type="text" autofocus />
+                </fieldset>
+                <button class="btn contact__save">Save New Contact to List</button>
+            </article>
+            `
+
+            let contactFormDiv = document.querySelector("#contact-form-div");
+            contactFormDiv.innerHTML = inputForm;
+
+            // How to create a button, add a class and attach an event listener using createElement.
+            // let newButton = document.createElement("button");
+            // newButton.classList.add("aclass");
+            // newButton.addEventListener("click", eventListeners.handleFormSubmission);
+            // console.log(newButton);
+            // displayContainer.appendChild(newButton);
+        },
+
+        handleFormSubmission () {
+            let contactSaveBtn = document.querySelector(".contact__save");
+            contactSaveBtn.addEventListener("click", () => {
+            console.log("bloooooop");
+
+            let name = document.querySelector("#contact__name").value;
+            let number = document.querySelector("#contact__phone__number").value;
+            let address = document.querySelector("#contact__address").value;
+
+            const contactObject = {
+                name: name,
+                number: number,
+                address: address
+            };
+            console.log(contactObject);
 
 
-        const contactForm =  {
+            contactCollection.saveContact(contactObject)
 
-                appendContactForm () {
-                  let inputForm =
-                  `
-                    <article>
-                        <h4>Please enter your contact information: </h4>
-                        <fieldset>
-                        <label for="contact__name">Name:</label>
-                        <input id="contact__name" name="contact__name" type="text" autofocus />
-                        </fieldset>
-                        <fieldset>
-                        <label for="contact__phone__number">Phone Number:</label>
-                        <input id="contact__phone__number" name="contact__phone__number" type="text" autofocus />
-                        </fieldset>
-                        <fieldset>
-                        <label for="contact__address">Address:</label>
-                        <input id="contact__address" name="contact__address" type="text" autofocus />
-                        </fieldset>
-                        <button class="btn contact__save">Save New Contact to List</button>
-                    </article>
-                  `
-
-                  let contactFormDiv = document.querySelector("#contact-form-div");
-                  contactFormDiv.innerHTML = inputForm;
-
-                  // How to create a button, add a class and attach an event listener using createElement.
-                  // let newButton = document.createElement("button");
-                  // newButton.classList.add("aclass");
-                  // newButton.addEventListener("click", eventListeners.handleFormSubmission);
-                  // console.log(newButton);
-                  // displayContainer.appendChild(newButton);
-                },
-
-                handleFormSubmission () {
-                    // return console.log("clicked the save button")
-                    let contactSaveBtn = document.querySelector(".contact__save");
-                    // console.log(contactSaveBtn);
-                    contactSaveBtn.addEventListener("click", () => console.log("bloooooop"));
-                    // contactList();
-                }
-  }
+            })
+        }
+    }
 
 export default contactForm;
