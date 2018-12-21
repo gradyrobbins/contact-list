@@ -2,10 +2,11 @@ body {
     font-size: 1.1em;
     color: DarkSlateGray;
   };
-  
+
 #contact-form-div {
     background-color: darkolivegreen;
     border: 1px solid black;
+    border-radius: 10px;
     padding: 20px;
     margin: 20px;
 
@@ -14,6 +15,25 @@ body {
 #display-container {
     background-color: burlywood;
     border: 1px solid black;
+    border-radius: 10px;
     padding: 20px;
     margin: 20px;
+}
+
+
+#bloop {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.scoop {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
 }

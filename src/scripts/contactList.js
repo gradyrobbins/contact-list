@@ -20,7 +20,7 @@ const contactList = {
       let contactDocFragment = document.createDocumentFragment();
         allEntries.forEach(entryItem => {
         let entryHtml = contact.cardBuilder(entryItem)
-        console.log(entryHtml)
+        // console.log(entryHtml)
         contactDocFragment.appendChild(entryHtml)
       })
         let outputContact = document.querySelector("#display-container")
