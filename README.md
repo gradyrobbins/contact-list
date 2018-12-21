@@ -1,4 +1,4 @@
-README starter template
+![](contact-list-demo-giphy.gif)
 
 Practice: Contact List
 

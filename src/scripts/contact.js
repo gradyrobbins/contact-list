@@ -15,6 +15,8 @@ This module builds out a single object, representing one person's contact info, 
 const contact = {
     cardBuilder (singleObjectfromDatabaseJSON)  {
        let contactCard = document.createElement("article");
+       contactCard.classList.add("scoop");
+       contactCard.setAttribute("id", "bloop")
 
        let contactName = document.createElement("h3");
        contactName.textContent = singleObjectfromDatabaseJSON.name;
