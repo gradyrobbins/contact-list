@@ -45,28 +45,10 @@
       "address": "Green Street"
     },
     {
-      "name": "Jisie",
-      "phoneNumber": "1-800-COHORT29",
-      "address": "500 Interstellar Blvd S",
+      "name": "Princess Peach",
+      "phoneNumber": "1-800-NINTENDO",
+      "address": "Bowser's Castle HELP!",
       "id": 3
-    },
-    {
-      "name": "Emily",
-      "phoneNumber": "1-800-C29-RULZ",
-      "address": "500 International Blvd S",
-      "id": 4
-    },
-    {
-      "name": "Leah",
-      "phoneNumber": "1-800-C26+C29",
-      "address": "500 Intertube Blvd S",
-      "id": 5
-    },
-    {
-      "name": "Grady",
-      "phoneNumber": "1-800-C27+C29",
-      "address": "500 FiveHunnit Dollars Blvd S",
-      "id": 6
     }
   ]
 }
