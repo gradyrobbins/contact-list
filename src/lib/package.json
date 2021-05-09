@@ -20,7 +20,7 @@
     "grunt-eslint": "^21.0.0",
     "grunt-http-server": "^2.1.0",
     "load-grunt-config": "^2.0.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "nss-domcomponent": "^0.1.0"
   },
   "description": "",
