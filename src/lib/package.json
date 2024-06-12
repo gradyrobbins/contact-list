@@ -25,7 +25,7 @@
   },
   "description": "",
   "dependencies": {
-    "braces": "^3.0.2",
+    "braces": "^3.0.3",
     "ecstatic": "^4.1.4",
     "js-yaml": "^3.13.1",
     "kind-of": "^6.0.3",
